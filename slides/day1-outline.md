@@ -139,10 +139,19 @@ Total                      30 pts
 
 ## 📑 Section 2: Anchor Demo — 09:15-09:30
 
-### Demo Setup — "Gesture Wand"
+### ลองทำ "Gesture Wand" เพื่อรู้จัก Impulse
 
 ```
-🪄 โจทย์: จำแนกท่าทางมือ
+🪄 โจทย์: จำแนกท่าทางมือแบบง่ายที่สุด
+
+ช่วงนี้พาดู 3 เรื่องพร้อมกัน:
+1. เก็บ data เข้าโปรเจกต์
+2. สร้าง Impulse
+3. Train แล้ว deploy กลับลงบอร์ด
+
+Impulse = ชุดคำสั่งที่บอกว่า
+ข้อมูลจะถูกประมวลผลยังไง
+และจะส่งเข้า learning block แบบไหน
 
 Classes:
 ○ วงกลม (Circle)
@@ -153,21 +162,21 @@ Sensor: Modulino Movement (IMU)
 Output: Modulino Pixels (สีตามคลาส)
 ```
 
-สลับไป live demo
+พาเปิด live demo แล้วชี้ให้เห็นว่า data, impulse, model อยู่ตรงไหนใน Studio
 
 ---
 
-### Demo Step-by-Step (สำรองถ้า demo พัง)
+### พาทำทีละขั้นใน Edge Impulse
 
 ```
 1. ต่อ Modulino Movement → UNO Q (Qwiic)
 2. เปิด Edge Impulse Studio
 3. Connect device
 4. Record: 20 samples × 3 classes
-5. Generate features
-6. Train (NN classifier, nano)
-7. Build → Deploy to UNO Q
-8. Demo inference 🎉
+5. Create Impulse → เลือก processing + Classification
+6. Generate features
+7. Train (NN classifier, nano)
+8. Build → Deploy to UNO Q → ทดลอง inference 🎉
 ```
 
 ---
