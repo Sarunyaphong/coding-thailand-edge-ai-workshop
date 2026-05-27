@@ -325,6 +325,10 @@ AI อาจจำว่า:
 → พอเปลี่ยนคน เปลี่ยนโต๊ะ เปลี่ยนแสง ก็ทายพัง
 ```
 
+ภาพประกอบ: ถ้าแต่ละคลาสติดมากับฉากหรือสภาพแสงคนละแบบ AI จะจำฉากแทนที่จะจำคลาส
+
+<img src="../assets/bias-shortcut-vs-balanced.svg" alt="Diagram showing shortcut bias versus balanced data collection" width="700" />
+
 ---
 
 ### Bias-Free Data Collection
