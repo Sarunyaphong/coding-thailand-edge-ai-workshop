@@ -1,11 +1,11 @@
-case,type,input_description,predicted_class,confidence,response_time_ms,actual_class,correct,symptom_note,prompt_example
-1,normal,ภาพหน้าตรง ระยะห่างจากกล้องปกติ ประมาณ 50 ซม. แสงสว่างพอดีเหมือนตอนเก็บข้อมูล,face,0.96,25,face,ใช่,ตรวจจับได้แม่นยำ กล่องวาดครอบพอดีใบหน้า,"A close-up portrait of a Thai teenage boy sitting in front of a webcam inside a classroom, bright daylight, sharp focus on face, raw photo"
-2,normal,ทำท่าหงายฝ่ามือขึ้นตรงๆ นิ่งๆ หน้ากล้อง เห็นนิ้วมือและลายมือชัดเจน,hand,0.91,28,hand,ใช่,ลากกล่องครอบพิกัดมือได้ถูกต้องทันที,"A close-up photo of a student's open palm held up to a camera lens, school workshop desk in the background, sharp details"
-3,normal,ทำท่าคว่ำมือหรือทำมุมเอียงเล็กน้อยตามลักษณะปกติที่เคยใช้เทรนระบบ,hand,0.88,26,hand,ใช่,ตรวจจับได้ดี แต่อาจมีบางจังหวะที่เส้นกรอบกระพริบเล็กน้อย,"A photo showing the back of a hand held up horizontally in front of a computer screen, clean indoor lighting"
-4,normal,นำทั้งใบหน้าและฝ่ามือเข้ามาอยู่ในเฟรมกล้องพร้อมกันในระยะปกติ,face, hand,"0.95, 0.85",30,"face, hand",ใช่,ระบบสามารถแยกแยะและวาดกล่องตรวจจับเจอทั้ง 2 วัตถุพร้อมกัน,"A photo of a student sitting at a desk raising one hand next to his smiling face, natural classroom setting"
-5,normal,ขยับใบหน้าหันซ้าย-ขวาอย่างช้าๆ ในมุมองศาที่ไม่เกินขอบเขตปกติ,face,0.92,25,face,ใช่,กล่อง AI วาดเคลื่อนที่ตามความเคลื่อนไหวได้ทัน ไม่หลุดเฟรม,"A cinematic photo of a boy slowly turning his head left and right, looking toward a camera, soft studio lighting"
-6,boundary,เอามือยกขึ้นมาบังใบหน้าไว้ครึ่งหนึ่ง (องค์ประกอบภาพก้ำกึ่งระหว่าง 2 คลาส),face,0.55,27,"face, hand",ไม่ครบ,ตรวจเจอแค่ใบหน้า แต่จับตำแหน่งของมือที่ยกขึ้นมาบังไม่ได้ (หลุดรอด),"A dramatic portrait of a person hiding half of their face behind an open hand, deep shadows, high contrast"
-7,boundary,ทำท่ามือกำปั้นกึ่งแบ หรือกางนิ้วแปลกๆ (ก้ำกึ่งว่าเป็นคลาส hand หรือไม่),hand,0.51,29,hand,ใช่,โมเดลเกิดความลังเล ค่าความมั่นใจลดลงแต่ยังพยายามลากกล่องครอบได้,"A close-up of a hand making a loose fist, halfway between open and closed, motion blur, moody lighting"
-8,variation,ขยับหรือสะบัดมือไปมาอย่างรวดเร็ว (Motion Blur) หรือเดินไปเทสในมุมมืดอับแสง,-,0.00,25,hand,ไม่ใช่,เกิดอาการมองข้าม (Recall ตก) AI ไม่ลากกล่องครอบวัตถุใดๆ เลย,"A blurry photo of a hand waving rapidly in a dark room with only low light from a smartphone screen"
-9,unseen,นำวัตถุอื่น เช่น แก้วน้ำ หรือตุ๊กตามาวางหน้ากล้อง (วัตถุที่ไม่ได้เก็บข้อมูลไว้เลย),hand,0.48,26,Background,ไม่ใช่,โมเดลเกิดอาการทายมั่ว เผลอลากกล่องครอบแก้วน้ำแล้วระบุว่าเป็นมือ,"A photo of a ceramic coffee mug sitting alone on a wooden table, shot through a webcam lens, standard room light"
-10,adversarial,เอาหลังมือมาโชว์ใกล้ๆ หรือทำท่าชูสองนิ้ว (ลักษณะคล้ายมือแต่จงใจให้ไม่ตรงเงื่อนไข),-,0.00,24,Background,ใช่,AI ไม่ลากกล่องครอบ (ถูกต้อง เพราะใกล้เคียงแต่ไม่ใช่ท่าที่กำหนด),"A close-up photo of a hand making a peace sign (V-sign) directly into the camera, sharp focus on fingers"
+case,type,input_description,predicted_class,confidence,response_time_ms,actual_class,correct,symptom_note
+1,normal,หน้าตรง ระยะปกติ ระยะห่างประมาณ 50 ซม.,face,0.96,25,face,ใช่,ตรวจจับได้แม่นยำ กล่องนิ่งและครอบพอดีหน้า
+2,normal,หงายฝ่ามือขึ้นตรงๆ หน้ากล้อง เห็นนิ้วชัดเจน,hand,0.91,28,hand,ใช่,ลากกล่องครอบมือได้ถูกต้องทันที
+3,normal,คว่ำมือและทำท่าทางปกติเหมือนตอนเก็บข้อมูล,hand,0.88,26,hand,ใช่,ตรวจจับได้ดี แต่อาจมีบางจังหวะกล่องกระพริบ
+4,normal,มีทั้งใบหน้าและฝ่ามืออยู่ในเฟรมพร้อมกัน,"face, hand","0.95, 0.85",30,"face, hand",ใช่,ตรวจจับเจอทั้ง 2 วัตถุพร้อมกันในเฟรมเดียว
+5,normal,ขยับใบหน้าซ้าย-ขวาช้าๆ ในมุมปกติ,face,0.92,25,face,ใช่,กล่องวาดตามใบหน้าได้ทัน ไม่หลุดเฟรม
+6,boundary,เอามือมาบังใบหน้าครึ่งหนึ่ง (ก้ำกึ่งระหว่าง 2 คลาส),face,0.55,27,"face, hand",ไม่ครบ,ตรวจเจอแค่ใบหน้า แต่จับตำแหน่งมือที่บังอยู่ไม่ได้
+7,boundary,ทำท่ามือกำปั้นกึ่งแบ (ก้ำกึ่งว่าใช่คลาส hand ไหม),hand,0.51,29,hand,ใช่,โมเดลลังเลเล็กน้อย ค่ามั่นใจลดลงแต่ยังลากกล่องได้
+8,variation,เดินไปเทสในมุมอับแสง / สะบัดมือไปมาอย่างรวดเร็ว,-,0.00,25,hand,ไม่ใช่,หลุดรอดสายตา (Recall ตก) AI มองไม่เห็นวัตถุ
+9,unseen,นำแก้วน้ำหรือตุ๊กตามาวางหน้ากล้อง (ไม่ได้เทรนข้อมูลไว้),hand,0.48,26,Background,ไม่ใช่,ทายมั่ว เผลอลากกล่องครอบแก้วน้ำแล้วทายว่าเป็นมือ
+10,adversarial,เอาหลังมือมาโชว์ หรือทำท่าชูสองนิ้วค้างไว้,-,0.00,24,Background,ใช่,AI ไม่ลากกล่องครอบ (ถูกต้อง เพราะใกล้เคียงแต่ไม่ใช่)
