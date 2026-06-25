@@ -26,7 +26,7 @@
 - [ ] ต่อ input + ลอง Modulino 7 ตัว + challenges → [morning/hardware-check.md](morning/hardware-check.md)
 
 **บ่าย — เทรนจริง**
-- [✅] input ที่เลือกเทรน: _______________
+- [✅] input ที่เลือกเทรน: ภาพ
 - [✅] เทรน V1 + อ่าน F1/confusion matrix → [afternoon/model.md](afternoon/model.md)
 - [✅] deploy ลงบอร์ดรันได้ (รูป/คลิปใน `assets/`)
 - [✅] prediction log ≥10 cases → [afternoon/predictions.csv](afternoon/predictions.csv)
@@ -35,13 +35,13 @@
 - [✅ ] Lean Canvas 4 ช่องแรก → [idea-canvas.md](idea-canvas.md)
 
 ## 📝 ตอบสั้น 3 ข้อ (ปิดวัน)
-**1. ทีมสอน AI ให้ทำอะไร? (ปัญหา + ผู้ใช้)** _______________
-**2. model ทำได้ดีแค่ไหน F1 ต่ำสุดที่ class ไหน ผิดเพราะอะไร?** _______________
-**3. ถ้ามีเวลาอีก 1 ชม. จะแก้อะไรก่อน?** _______________
+**1. ทีมสอน AI ให้ทำอะไร? (ปัญหา + ผู้ใช้)** ให้แยกมือและหน้า ปัญหาคือเมื่อแสกนใบหน้ากล้องจับแยกอวัยวะไม่ถูก
+**2. model ทำได้ดีแค่ไหน F1 ต่ำสุดที่ class ไหน ผิดเพราะอะไร?** ทำได้ดี80% คลาสที่ต่ำสุดคือ Hand ผิดเพราะ DATASETน้อยเกินไป
+**3. ถ้ามีเวลาอีก 1 ชม. จะแก้อะไรก่อน?** เพิ่ม DATASET
 
 ## 🔗 ลิงก์
-- Edge Impulse project: _______________
-- รูป/คลิป model รันบนบอร์ด: ดูใน [assets/](assets/)
+- Edge Impulse project: [Link](https://studio.edgeimpulse.com/public/1040459/live)
+- รูป/คลิป model รันบนบอร์ด: ดูใน [Hand](../..Depa_image/AI/Hand.jpg),[Face](../..Depa_image/AI/Face.jpg)
 
 ## 📦 ในโฟลเดอร์นี้มีอะไร
 | ไฟล์ | กรอกตอนไหน |
