@@ -40,11 +40,16 @@ sudo apt install -y gcc g++ make build-essential nodejs sox \
   gstreamer1.0-tools gstreamer1.0-plugins-good \
   gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps
 sudo npm install edge-impulse-linux -g --unsafe-perm
+sudo npm install edge-impulse-cli -g --unsafe-perm
 ls /dev/video*
 arecord -l
 ```
 `ctrl + x` → `y` → `enter` แล้ว `bash run.sh` จากนั้น `edge-impulse-linux`
 (login เอา email/password จากหน้า Edge Impulse → account settings)
+
+> ⚠️ **`edge-impulse-data-forwarder: command not found`** (ใช้กับ Modulino sensor)
+> มันอยู่ในแพ็กเกจ **`edge-impulse-cli`** ไม่ใช่ `edge-impulse-linux` → ลงเพิ่ม:
+> `sudo npm install edge-impulse-cli -g --unsafe-perm`
 
 ## ✨ ทำก่อนเรียกพี่เลี้ยง
 

@@ -57,7 +57,8 @@ Edge Impulse คือเว็บที่ช่วยเราเทรน AI 
 curl -sL https://deb.nodesource.com/setup_20.x | sudo bash -
 sudo apt install -y nodejs sox gstreamer1.0-tools \
   gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps
-sudo npm install edge-impulse-linux -g --unsafe-perm
+sudo npm install edge-impulse-linux -g --unsafe-perm   # กล้อง/ไมค์ + runner
+sudo npm install edge-impulse-cli -g --unsafe-perm     # data-forwarder/uploader (Modulino)
 
 # 2) เช็กว่าเห็นอุปกรณ์ก่อน
 ls /dev/video*   # กล้อง
@@ -90,6 +91,11 @@ App Lab → Sketch → ใช้ [collect-movement-ei](examples/modulino/collect
 ```bash
 edge-impulse-data-forwarder
 ```
+
+> ⚠️ ขึ้น **`command not found`?** data-forwarder อยู่ในแพ็กเกจ `edge-impulse-cli` (คนละตัวกับ `edge-impulse-linux`) → ลงเพิ่มก่อน:
+> ```bash
+> sudo npm install edge-impulse-cli -g --unsafe-perm
+> ```
 มันจะถามทีละข้อ ตอบตามนี้:
 
 | ถาม | ตอบ |
