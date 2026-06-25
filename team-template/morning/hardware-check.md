@@ -11,7 +11,7 @@
 | Input | ต่อผ่าน? | หลักฐาน |
 |---|---|---|
 | 1. Modulino sensor (Qwiic) | [✅] | [Modulino Folder](../../Depa_image/Modulino_Sensor) |
-| 2. USB Webcam | [✅] | [Webcam](../Depa_image/Webcam) |
+| 2. USB Webcam | [✅] | [Webcam](../../Depa_image/Webcam) |
 | 3. USB Mic | [ ] | ![mic](../assets/mic.jpg) |
 
 ## Modulino — ลองกี่ตัว (มี 7 ตัว)
