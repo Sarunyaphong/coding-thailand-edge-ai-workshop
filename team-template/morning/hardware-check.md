@@ -11,7 +11,7 @@
 | Input | ต่อผ่าน? | หลักฐาน |
 |---|---|---|
 | 1. Modulino sensor (Qwiic) | [✅] | [Modulino Folder](../../student/examples/modulino/) |
-| 2. USB Webcam | [✅] | [camera](../../student/examples/webcam/) |
+| 2. USB Webcam | [✅] | [camera](../New%20folder%20(2)/Webcam/) |
 | 3. USB Mic | [ ] | ![mic](../assets/mic.jpg) |
 
 ## Modulino — ลองกี่ตัว (มี 7 ตัว)
