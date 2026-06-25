@@ -26,5 +26,5 @@
 - คลิป/รูปตอนรัน:[Hand](../..Depa_image/AI/Hand.jpg)
 
 ## (ต่อยอด) Output logic
-- threshold ที่ใช้: confidence ≥ ____
+- threshold ที่ใช้: confidence ≥ -
 - map class → output:"เตือน" → Buzzer + Pixels แดง
